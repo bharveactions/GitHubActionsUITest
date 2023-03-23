@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: xcodebuild -v
+      run: xcodebuild
     - name: Run tests
-      run: xcodebuild test -v
+      run: xcodebuild test
