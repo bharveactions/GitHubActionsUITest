@@ -16,4 +16,4 @@ jobs:
     - name: Build
       run: xcodebuild
     - name: Run tests
-      run: xcodebuild test -workspace GitHubActionsUITest.xcworkspace -scheme GitHubActionsUITest
+      run: xcodebuild test -workspace GitHubActionsUITest.xcodeproj -scheme GitHubActionsUITest
