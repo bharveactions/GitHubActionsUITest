@@ -13,9 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Pre-load simulator
-      run: xcrun instruments -w 'iPhone 7 (10.3)' || sleep 15
     - name: Build
       run: xcodebuild
     - name: Run tests
-      run: xcodebuild test -project GitHubActionsUITest.xcodeproj -scheme GitHubActionsUITest
+      run: xcodebuild test -project GitHubActionsUITest.xcodeproj -scheme GitHubActionsUITest -sdk iphonesimulator
