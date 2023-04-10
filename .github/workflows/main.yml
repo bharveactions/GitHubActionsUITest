@@ -16,4 +16,4 @@ jobs:
     - name: Build
       run: xcodebuild
     - name: Run tests
-      run: xcodebuild test -project GitHubActionsUITest.xcodeproj -scheme GitHubActionsUITest -sdk iphonesimulator -destination 'platform=iOS Simulator,id=dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder,OS=16.4'
+      run: xcodebuild test -project GitHubActionsUITest.xcodeproj -scheme GitHubActionsUITest -sdk iphonesimulator -destination 'platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device'
